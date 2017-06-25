@@ -1,0 +1,168 @@
+/**
+ * App.css
+ * Ryan Isler - 2017
+ */
+
+@font-face {
+  src: url("Oslo.woff");
+  font-family: "Oslo";
+}
+body {
+  font-family: "Oslo";
+  font-size: 16px;
+}
+.in {
+  margin: 10px auto;
+  width: 80%;
+  height: 100px;
+}
+.product-name {
+  width: 95%;
+  margin: 0 auto 10px;
+  display: block;
+}
+.product-price {
+  width: 50px;
+  float: left;
+}
+.product-submit {
+  float: right;
+}
+input[type="text"] {
+  height: 20px;
+  padding: 10px 5px;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+  font-family: "Oslo";
+  color: #666;
+}
+input[type="text"]:hover, input[type="text"]:focus, input[type="text"]:active {
+  border: 1px solid #99cfef;
+}
+#expense-total {
+  display: block;
+  margin: 9px auto;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  overflow: hidden;
+  position: absolute;
+  left: -3%;
+}
+input[type="submit"], input[type="button"] {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid transparent;
+  background: #99cfef;
+  font-family: "Oslo";
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+  
+  transition: background 1s;
+  cursor: pointer;
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+  background: #bbdfff;
+}
+.product-list {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.product-list p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+.product-list-item {
+  width: inherit;
+  height: 30px;
+  margin: 0 auto 10px;
+  display: block;
+  clear: both;
+  border-bottom: 1px dashed #e5e5e5;
+  position: relative;
+  
+  top: -10px;
+  opacity: 0.0;
+  
+  animation: lightup 1s ease-out forwards;
+  -webkit-animation: lightup 1s ease-out forwards;
+}
+
+@keyframes lightup {
+  0% {
+  top: -10px;
+    opacity: 0.0;
+  }
+  100% {
+    top: 0;
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes lightup {
+  0% {
+  top: -10px;
+    opacity: 0.0;
+  }
+  100% {
+    top: 0;
+    opacity: 1.0;
+  }
+}
+
+.product-list-left {
+  float: left;
+}
+
+.product-list-right {
+  float: right;
+}
+
+.App {
+  font-family: "Oslo";
+  font-size: 16px;
+  
+  width: 100%;
+  height: auto;
+  /*
+  max-width: 375px;
+  max-height: 667px;
+  */
+}
+
+hr {
+  width: 80%;
+  border-color: #efefef;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+}
+
+.header h1 {
+  width: 100%;
+  text-align: center; 
+  letter-spacing: 1px;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
